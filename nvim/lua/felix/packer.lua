@@ -45,4 +45,11 @@ return require('packer').startup(function(use)
     use 'mfussenegger/nvim-jdtls'
     use 'lukas-reineke/indent-blankline.nvim'
     use 'HiPhish/rainbow-delimiters.nvim'
+	use {
+        'm4xshen/autoclose.nvim',
+		-- Optional; default configuration will be used if setup isn't called.
+		config = function()
+            require("autoclose").setup()
+		end,
+	}
 end)

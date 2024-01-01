@@ -40,6 +40,7 @@ local config = {
         '-Dlog.level=ALL',
         '-Xmx1g',
         '--add-modules=ALL-SYSTEM',
+        '--add-modules=jdk.incubator.vector',
         '--add-opens', 'java.base/java.util=ALL-UNNAMED',
         '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
         '-javaagent:' .. lombok_path,
